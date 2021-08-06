@@ -2,8 +2,6 @@ package assg2_hilkh19;
 
 /*
  * author - Khyre Hill
- * accidentally named package hilkh19 instead of hillkh19
- * and i dont know how to change name of packet without messing everything up
  */
 public class RewardsAccount extends StudentAccount  {
 
@@ -42,7 +40,6 @@ public class RewardsAccount extends StudentAccount  {
 			System.out.println("Insufficient amount for redeeming rewards.");
 		}
 	
-	return reward;
 	
 }
 	
