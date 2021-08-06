@@ -2,16 +2,13 @@ package assg2_hilkh19;
 
 /*
  * author - Khyre Hill
- * accidentally named package hilkh19 instead of hillkh19
- * and i dont know how to change name of packet without messing everything up
- * 
  */
 
 public class StudentAccount {
 
 	private int AccNum;
 	private double Bal;
-	private static int counter;
+	private static int counter = 0;
 	
 	
 	/*
@@ -28,7 +25,6 @@ public class StudentAccount {
 	 * base constructor named studentaccount
 	 */
 	public StudentAccount() {
-		super();
 		this.Bal = 0;
 		++ counter;
 		AccNum = counter;
@@ -100,8 +96,8 @@ public class StudentAccount {
 	 */
 	public void transferIn(StudentAccount ba, double amount) {
 		if(amount > 0) {
-			this.Bal += amount;
-			ba.Bal -= amount;
+			this.Bal -= amount;
+			ba.Bal += amount;
 		}
 	}
 	
